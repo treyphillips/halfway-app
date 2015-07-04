@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <title>Halfway</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="css/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.9/slideout.min.js"></script>
+</head>
+
+<body>
+  <nav id="menu">
+    <h2>Menu</h2>
+  </nav>
+
+  <main id="panel">
+
+    <div class="header">
+
+
+      <!-- <button class="toggle-button">☰</button> -->
+      <button class="toggle-button"><i class="fa fa-bars fa-lg"></i></button>
+
+      <h1 class="title">Halfway</h1>
+    </div>
+
+    <div class="content">
+      <div class="description">
+        <p>Halfway looks at the location of you and a friend and tells you what's exactly halfway between yougives you a list of places to hangout.</p>
+      </div>
+
+      <p> &#9986; </p>
+
+      <button class="friend">Choose a friend <i class="fa fa-arrow-right"></i></button>
+      <div class="compass">
+        <button class="big-button"><i class="fa fa-compass fa-4x"></i></button>
+      </div>
+    </div>
+
+
+  </main>
+
+
+  <script>
+    var slideout = new Slideout({
+      'panel': document.getElementById('panel'),
+      'menu': document.getElementById('menu'),
+      'padding': 256,
+      'tolerance': 70
+    });
+
+    ///////////////// Toggle button////////////////////
+    document.querySelector('.toggle-button').addEventListener('click', function() {
+      slideout.toggle();
+    });
+  </script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
